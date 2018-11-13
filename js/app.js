@@ -97,7 +97,10 @@ function defaultValues() {
     machedCard = 0;
     startGame = true;
     moves = 0;
+    scoreVal = 0;
+    score.textContent = scoreVal;
     counter.textContent = 0;
+    movesUsed.textContent = 0;
     li1 = null;
     li2 = null;
 }
@@ -182,6 +185,7 @@ function gameStart() {
 
     gameEnd();    //stop the timer (for restart game)
     time.innerHTML = '00:00';
+    lastTime.innerHTML = '00:00';
 
     let list = document.getElementsByClassName("deck");
 
